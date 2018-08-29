@@ -4,14 +4,14 @@ CFLAGS= -c -Wall -lpthread
 
 all:jantar
 
-tudo: main.o rush.o
-  ${CC} main.o rush.o -o rush
+jantar: filosofo.o jantar.o
+	${CC} filosofo.o jantar.o -o jantar
 
-filoso.o: filosofo.c
-  ${CC} ${CFLAGS} filosofo.c
+filosofo.o: filosofo.c
+	${CC} ${CFLAGS} filosofo.c
 
 jantar.o: jantar.c
-  ${CC} ${CFLAGS} jantar.c
+	${CC} ${CFLAGS} jantar.c
 
 clean:
- rm -rf *.o jantar
+	rm -rf *.o jantar

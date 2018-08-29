@@ -1,5 +1,5 @@
 #include <semaphore.h>
-#include "filoso.h"
+#include "filosofo.h"
 
 #define N 5
 #define LEFT (N+i-1)%N
