@@ -1,4 +1,4 @@
-#include <semaphore.h>
+#include <pthread.h>
 #include "filosofo.h"
 
 #define N 5
